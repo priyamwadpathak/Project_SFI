@@ -1,0 +1,139 @@
+.page-content {
+    margin: 5px;
+    padding: 5px;
+}
+
+.jumbotron {
+    margin-bottom: 5px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    background-color: #f0f79a;
+}
+
+.course-header {
+    padding: 5px;
+}
+
+#code {
+    color:white;
+}
+
+#title {
+    text-align: center;
+    color:white;
+}
+
+.session-info {
+    color: white;
+}
+
+.course-topics {
+    margin: 100px;
+    padding: 5px;
+}
+
+.rating-system {
+    float: left;
+}
+
+.dropdown {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+}
+
+.topics-wrapper {
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid darkslategrey;
+}
+
+.page-content-border {
+    margin: 15px;
+}
+
+label{
+  cursor: pointer;
+}
+
+
+.field label, .field input[type=radio] {display:none}
+.field input[type=radio]:checked ~ label {display:inline-block}
+
+.field label {font-size:2.7rem;line-height:1.3rem;color:#871618;}
+.rating {display:inline-block;margin:40px;padding:10px;}
+
+
+.dropnotification {
+    background-color: #C3BCA9;
+    color: white;
+    padding: 0.1px;
+    border: none;
+    cursor: pointer; 
+    width:30px;
+    height:30px;
+}
+
+.dropnotification:hover, .dropnotification:focus {
+    background-color: #BF242A;
+}
+
+.dropnotificationdown {
+    float: right;
+    position: relative;
+}
+
+.dropnotificationdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /*width:400px;*/
+    width:1500%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index:1;
+}
+
+.dropnotificationdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropnotificationdown a:hover {background-color: #BF242A; color: white;}
+
+.shownotification {display:block; margin-top: 38px;}
+
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    color: rgba(36, 7, 7, 0.96);
+    background-color: #fff;
+}
+
+button, input, select, textarea {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 5px;
+    font-family: cursive;
+    font-size: inherit;
+    line-height: 1.2;
+    color: white;
+    background-color: #a94442;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,  h2, h3, h4, h5, h6 {
+    font-family: cursive;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #871618;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}

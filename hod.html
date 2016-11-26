@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="outer-border">
+        <div class="inner-padding">
+            <div class="container-fluid">
+                <div class="row" style="background-color: #e3dfd4">
+                    <div class="col-md-12">
+                        <p id="head">You are logged in as <a href="#">xyz</a> | <a href="#">Return back to moodle</a> |</p>
+                    </div>
+                </div>
+
+                <div class="row" style="background-color: #e3dfd4">
+                    <div class="col-md-4 col-sm-5 col-xs-7"><img id="logo" src="assets/logo.png" alt="NU-logo" /></div>
+                    <div class="col-md-8 col-sm-7 col-xs-5">
+                        <h1 id="portal-name"><b>Student-Faculty Interaction Portal</b></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <hr style="border-top: 1px solid darkslategrey; margin-top: 0px; margin-bottom: 0px;" />
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row" style="background-color: #c3bca9">
+                    <div class="col-md-1 col-xs-2">
+                        <a href="#">
+                            <h4>Home</h4>
+                        </a>
+                    </div>
+                    <div class="col-md-1 col-xs-2">
+                        <a href="#">
+                            <h4>Back</h4>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <a href="#">
+                            <h4>Report a bug</h4>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="dropnotificationdown">
+                            <img class="dropnotification" id="notification" src="../assets/notification.png" alt="Notification" onclick="shownotificationFunction()"
+                            />
+                            <div id="mydropnotificationdown" class="dropnotificationdown-content">
+                                <a href="#">A requested to meet you.</a>
+                                <a href="#">B has accepted your meeting request.</a>
+                                <a href="#">C has rejected your meeting request.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <hr style="border-top: 1px solid darkslategrey; margin-top: 0px; margin-bottom: 0px;" />
+                </div>
+            </div>
+
+            <div class="page-content">
+                <div class="jumbotron">
+                    <div class="container-fluid">
+                        <div class="col-md-9 col-sm-9">
+                            <div class="courses-projects">
+                                <div>
+                                    <h2 id="heading">My Courses:</h2>
+                                </div>
+                                <div id="coordinating" style="background-color:#ef4424; padding: 10px; font-size:20px; color: white; width: 25%; word-wrap: break-word;">Coordinator-</div>
+                                <div class="course-title">
+                                    <button class="accordion">Course 1</button>
+                                    <div class="panel">
+                                        <ul>
+                                            <li>Faculty: <a href="#">xyz</a></li>
+                                            <li><a href="#">View course handout</a></li>
+                                            <li><a href="#">Request meeting</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <button class="accordion">Course 2</button>
+                                    <div class="panel">
+                                        <ul>
+                                            <li>Faculty: <a href="#">xyz</a></li>
+                                            <li><a href="#">View course handout</a></li>
+                                            <li><a href="#">Request meeting</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <button class="accordion">Course 3</button>
+                                    <div class="panel">
+                                        <ul>
+                                            <li>Faculty: <a href="#">xyz</a></li>
+                                            <li><a href="#">View course handout</a></li>
+                                            <li><a href="#">Request meeting</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                                <div id="teaching" style="background-color:#ef4424; padding: 10px; font-size:20px; color: white; width: 25%; word-wrap: break-word;">Instructor-</div>
+                                <div class="course-title">
+                                    <button class="accordion">Course 1</button>
+                                    <div class="panel">
+                                        <ul>
+                                            <li><a href="#">View course handout</a></li>
+                                            <li><a href="#">Request meeting</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <button class="accordion">Course 2</button>
+                                    <div class="panel">
+                                        <ul>
+                                            <li><a href="#">View course handout</a></li>
+                                            <li><a href="#">Request meeting</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <button class="accordion">Course 3</button>
+                                    <div class="panel">
+                                        <ul>
+                                            <li><a href="#">View course handout</a></li>
+                                            <li><a href="#">Request meeting</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="courses-projects">
+                                <div>
+                                    <h2 id="heading">My Projects:</h2>
+                                </div>
+                                <div class="course-title">
+                                    <button class="accordion">Project 1</button>
+                                    <div class="panel">
+                                        <ul>
+                                            <li>Faculty: <a href="#">xyz</a></li>
+                                            <li><a href="#">See progress</a></li>
+                                            <li><a href="#">Request meeting</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <button class="accordion">Project 2</button>
+                                    <div class="panel">
+                                        <ul>
+                                            <li>Faculty: <a href="#">xyz</a></li>
+                                            <li><a href="#">See progress</a></li>
+                                            <li><a href="#">Request meeting</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <button class="accordion">Project 3</button>
+                                    <div class="panel">
+                                        <ul>
+                                            <li>Faculty: <a href="#">xyz</a></li>
+                                            <li><a href="#">See progress</a></li>
+                                            <li><a href="#">Request meeting</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3">
+                            <div class="profile">
+                                <div>
+                                    <h3 id="my-profile">Profile</h3>
+                                </div>
+                                <div><img id="user-face" src="assets\face.png" /></div>
+                                <div id="profile-description">
+                                    <h4><b>My Name</b></h4>
+                                    <h4>Employee id: <i>........</i></h4>
+                                    <h4><i>Specialisation & Research feild </i></h4>
+                                    <ul style="list-style-type:none; margin-left: -50px;">
+                                        <li> Research field 1</li>
+                                        <li> Research field 2</li>
+                                        <li> Specialisation 1</li>
+                                    </ul>
+                                    <h4>Email Id - <a href="#">Name.Surname@niituniversity.in</a></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="js/jquery-3.1.1.min.js"> </script>
+            <script src="js/bootstrap.min.js"> </script>
+            <script src="js/header.js" type="text/javascript"> </script>
+            <script src="js/common.js" type "text/javascript"> </script>
+</body>
+
+</html>

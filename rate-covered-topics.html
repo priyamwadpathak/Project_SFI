@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/rate-covered-topics.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="outer-border">
+        <div class="inner-padding">
+            <div class="container-fluid">
+                <div class="row" style="background-color: #e3dfd4">
+                    <div class="col-md-12">
+                        <p id="head">You are logged in as <a href="#">xyz</a> | <a href="#">Return back to moodle</a> |</p>
+                    </div>
+                </div>
+
+                <div class="row" style="background-color: #e3dfd4">
+                    <div class="col-md-4 col-sm-5 col-xs-7"><img id="logo" src="assets/logo.png" alt="NU-logo" /></div>
+                    <div class="col-md-8 col-sm-7 col-xs-5">
+                        <h1 id="portal-name"><b>Student-Faculty Interaction Portal</b></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <hr style="border-top: 1px solid darkslategrey; margin-top: 0px; margin-bottom: 0px;" />
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row" style="background-color: #c3bca9">
+                    <div class="col-md-1 col-xs-2">
+                        <a href="#">
+                            <h4>Home</h4>
+                        </a>
+                    </div>
+                    <div class="col-md-1 col-xs-2">
+                        <a href="#">
+                            <h4>Back</h4>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <a href="#">
+                            <h4>Report a bug</h4>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="dropnotificationdown">
+                            <img class="dropnotification" id="notification" src="../assets/notification.png" alt="Notification" onclick="shownotificationFunction()"
+                            />
+                            <div id="mydropnotificationdown" class="dropnotificationdown-content">
+                                <a href="#">A requested to meet you.</a>
+                                <a href="#">B has accepted your meeting request.</a>
+                                <a href="#">C has rejected your meeting request.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <hr style="border-top: 1px solid darkslategrey; margin-top: 0px; margin-bottom: 0px;" />
+                </div>
+            </div>
+
+            <div class="page-content-border">
+                <div class="page-content">
+                    <div class="jumbotron">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <hr style="border-top: 1px solid darkslategrey; margin-top: 0px; margin-bottom: 0px;" />
+                            </div>
+                        </div>
+
+                        <div class="container-fluid" style="background-color: #ef4424;">
+                            <div class="course-header">
+                                <div class="col-md-2 col-sm-2 col-xs-4">
+                                    <h3 id="code"><b>Course_code</b>
+                                        <h3>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <h3 id="title"><b>Course title</b></h3>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-6">
+                                    <h4 class="session-info"><b>Sem:</b> #</h4>
+                                    <h4 class="session-info"><b>Session:</b> #</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <hr style="border-top: 1px solid darkslategrey; margin-top: 0px; margin-bottom: 0px;" />
+                            </div>
+                        </div>
+
+                        <div class="topics-wrapper">
+                            <div class="container-fluid">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel-heading" role="tab">
+                                            <div class="col-md-6 col-sm-6">
+                                                <div class="panel-title">
+                                                    <div class="checkbox"><input class="topic_input" type="checkbox" name="topics_covered" value="covered"></div>
+                                                    <h3 class="topic-heading"><b>Topic 1</b></h3>
+                                                    <p>Related Links: <i>&nbsp; <u>Link1</u> &emsp; <u>Link2</u></i></p>
+                                                    <button type="button" name="edit_link">Edit</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-5 col-sm-5">
+                                                <div class="rating-system">
+                                                    <div class="dropdown">
+                                                        <select name="two" class="dropdown-select">
+                                                            <option value="">Select…</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="3">4</option>
+                                                            <option value="3">5</option>
+                                                    </select>
+                                                    </div>
+                                                    <button class="frequency" type="button" name="view_frequency">View Frequency</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-1 col-sm-1">
+                                                <h5 style="text-align:center;">Subtopics</h5>
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <img class="dropdown" src="assets/up.svg" alt="dropdown" />
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12 col-xs-12">
+                                                <hr style="border-top: 2px solid black" />
+                                            </div>
+                                        </div>
+
+                                        <div class="panel-heading" role="tab">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="panel-title">
+                                                    <div class="checkbox"><input class="topic_input" type="checkbox" name="topics_covered" value="covered"></div>
+                                                    <h3 class="topic-heading"><b>Topic 2</b></h3>
+                                                    <p>Related Links: <i>&nbsp; <u>Link1</u> &emsp; <u>Link2</u></i></p>
+                                                    <button type="button" name="edit_link">Edit</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-5 col-sm-5 col-xs-12">
+                                                <div class="rating-system">
+                                                    <div class="dropdown">
+                                                        <select name="one" class="dropdown-select">
+                                                            <option value="">Select…</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="3">4</option>
+                                                            <option value="3">5</option>
+                                                        </select>
+                                                    </div>
+                                                    <button class="frequency" type="button" name="view_frequency">View Frequency</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-1 col-sm-1">
+                                                <h5 style="text-align:center;">Subtopics</h5>
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                    <img class="dropdown" src="assets/up.svg" alt="dropdown" />
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-sm-12">
+                                            <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel">
+                                                <hr style="border-top: 1px dashed black" />
+                                                <div class="panel-body">
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="checkbox"><input class="topic_input" type="checkbox" name="topics_covered"
+                                                                value="covered"></div>
+                                                        <h4 class="topic-heading"><b>Subtopic 1</b></h4>
+                                                        <div class="links">
+                                                            <p>Related Links: <i>&nbsp; <u>Link1</u> &emsp; <u>Link2</u></i></p>
+                                                            <button type="button" name="edit_link">Edit</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="rating-system">
+                                                            <div class="dropdown">
+                                                                <select name="two" class="dropdown-select">
+                                                                    <option value="">Select…</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="3">4</option>
+                                                                    <option value="3">5</option>
+                                                                </select>
+                                                            </div>
+                                                            <button class="frequency" type="button" name="view_frequency">View Frequency</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-xs-12">
+                                                            <hr style="border-top: 0.5px dotted grey" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="checkbox"><input class="topic_input" type="checkbox" name="topics_covered"
+                                                                value="covered"></div>
+                                                        <h4 class="topic-heading"><b>Subtopic 2</b></h4>
+                                                        <div class="links">
+                                                            <p>Related Links: <i>&nbsp; <u>Link1</u> &emsp; <u>Link2</u></i></p>
+                                                            <button type="button" name="edit_link">Edit</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="rating-system">
+                                                            <div class="dropdown">
+                                                                <select name="two" class="dropdown-select">
+                                                                    <option value="">Select…</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="3">4</option>
+                                                                    <option value="3">5</option>
+                                                                </select>
+                                                            </div>
+                                                            <button class="frequency" type="button" name="view_frequency">View Frequency</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <hr style="border-top: 2px solid black" />
+                                            </div>
+                                        </div>
+
+                                        <div class="panel-heading" role="tab">
+                                            <div class="col-md-6 col-sm-6">
+                                                <div class="panel-title">
+                                                    <div class="checkbox"><input class="topic_input" type="checkbox" name="topics_covered" value="covered"></div>
+                                                    <h3 class="topic-heading"><b>Topic 3</b></h3>
+                                                    <p>Related Links: <i>&nbsp; <u>Link1</u> &emsp; <u>Link2</u></i></p>
+                                                    <button type="button" name="edit_link">Edit</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-5 col-sm-5">
+                                                <div class="rating-system">
+                                                    <div class="dropdown">
+                                                        <select name="two" class="dropdown-select">
+                                                            <option value="">Select…</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="3">4</option>
+                                                            <option value="3">5</option>
+                                                    </select>
+                                                    </div>
+                                                    <button class="frequency" type="button" name="view_frequency">View Frequency</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-1 col-sm-1">
+                                                <h5 style="text-align:center;">Subtopics</h5>
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                    <img class="dropdown" src="assets/up.svg" alt="dropdown" />
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-sm-12">
+                                            <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel">
+                                                <hr style="border-top: 1px dashed black" />
+                                                <div class="panel-body">
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="checkbox"><input class="topic_input" type="checkbox" name="topics_covered"
+                                                                value="covered"></div>
+                                                        <h4 class="topic-heading"><b>Subtopic 1</b></h4>
+                                                        <div class="links">
+                                                            <p>Related Links: <i>&nbsp; <u>Link1</u> &emsp; <u>Link2</u></i></p>
+                                                            <button type="button" name="edit_link">Edit</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="rating-system">
+                                                            <div class="dropdown">
+                                                                <select name="two" class="dropdown-select">
+                                                                    <option value="">Select…</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="3">4</option>
+                                                                    <option value="3">5</option>
+                                                                </select>
+                                                            </div>
+                                                            <button class="frequency" type="button" name="view_frequency">View Frequency</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-xs-12">
+                                                            <hr style="border-top: 0.5px dotted grey" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="checkbox"><input class="topic_input" type="checkbox" name="topics_covered"
+                                                                value="covered"></div>
+                                                        <h4 class="topic-heading"><b>Subtopic 2</b></h4>
+                                                        <div class="links">
+                                                            <p>Related Links: <i>&nbsp; <u>Link1</u> &emsp; <u>Link2</u></i></p>
+                                                            <button type="button" name="edit_link">Edit</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="rating-system">
+                                                            <div class="dropdown">
+                                                                <select name="two" class="dropdown-select">
+                                                                    <option value="">Select…</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="3">4</option>
+                                                                    <option value="3">5</option>
+                                                                </select>
+                                                            </div>
+                                                            <button class="frequency" type="button" name="view_frequency">View Frequency</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-xs-12">
+                                                            <hr style="border-top: 0.5px dotted grey" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="checkbox"><input class="topic_input" type="checkbox" name="topics_covered"
+                                                                value="covered"></div>
+                                                        <h4 class="topic-heading"><b>Subtopic 3</b></h4>
+                                                        <div class="links">
+                                                            <p>Related Links: <i>&nbsp; <u>Link1</u> &emsp; <u>Link2</u></i></p>
+                                                            <button type="button" name="edit_link">Edit</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="rating-system">
+                                                            <div class="dropdown">
+                                                                <select name="two" class="dropdown-select">
+                                                                    <option value="">Select…</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="3">4</option>
+                                                                    <option value="3">5</option>
+                                                                </select>
+                                                            </div>
+                                                            <button class="frequency" type="button" name="view_frequency">View Frequency</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end of #accordion -->
+                                </div>
+                            </div>
+                            <!-- end of container -->
+                        </div>
+                        <!-- end of topic-wrap -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/jquery-3.1.1.min.js"> </script>
+    <script src="js/bootstrap.min.js"> </script>
+    <script src="js/rate-covered-topics.js"> </script>
+</body>
+
+</html>

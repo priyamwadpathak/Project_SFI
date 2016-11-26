@@ -1,0 +1,79 @@
+.outer-border {
+    border: 2px ridge black;
+    margin: 8px;
+}
+
+.inner-padding {
+    padding: 8px;
+}
+
+#head {
+    float: right;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+#portal-name {
+    color: ##871618;
+    font-family: cursive;
+}
+
+#logo {
+    width: 240px;
+    height: 120px;
+}
+
+#notification {
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,  h2, h3, h4, h5, h6 {
+    font-family: cursive;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #871618;
+}
+
+.dropnotification {
+    background-color: #C3BCA9;
+    color: white;
+    padding: 0.1px;
+    border: none;
+    cursor: pointer; 
+    width:30px;
+    height:30px;
+}
+
+.dropnotification:hover, .dropnotification:focus {
+    background-color: #BF242A;
+}
+
+.dropnotificationdown {
+    float: right;
+    position: relative;
+}
+
+.dropnotificationdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /*width:400px;*/
+    width:1500%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index:1;
+}
+
+.dropnotificationdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropnotificationdown a:hover {background-color: #BF242A; color: white;}
+
+.shownotification {display:block; margin-top: 38px;}
