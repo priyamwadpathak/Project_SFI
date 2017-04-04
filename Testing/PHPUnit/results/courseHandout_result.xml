@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="courseHandoutTest" file="/home/piyush/Documents/programs/Software_Engg-Project-Student_Faculty_Interaction_System/testing using phpunit/test cases/courseHandout_test.php" tests="8" assertions="16" failures="0" errors="0" time="0.053840">
+    <testcase name="test_stripBadChars" class="courseHandoutTest" file="/home/piyush/Documents/programs/Software_Engg-Project-Student_Faculty_Interaction_System/testing using phpunit/test cases/courseHandout_test.php" line="18" assertions="2" time="0.001027"/>
+    <testcase name="test_getCourseTitle" class="courseHandoutTest" file="/home/piyush/Documents/programs/Software_Engg-Project-Student_Faculty_Interaction_System/testing using phpunit/test cases/courseHandout_test.php" line="31" assertions="2" time="0.001872"/>
+    <testcase name="test_getTopics" class="courseHandoutTest" file="/home/piyush/Documents/programs/Software_Engg-Project-Student_Faculty_Interaction_System/testing using phpunit/test cases/courseHandout_test.php" line="52" assertions="2" time="0.001611"/>
+    <testcase name="test_getSubtopics" class="courseHandoutTest" file="/home/piyush/Documents/programs/Software_Engg-Project-Student_Faculty_Interaction_System/testing using phpunit/test cases/courseHandout_test.php" line="72" assertions="2" time="0.014296"/>
+    <testcase name="test_getTopicLink" class="courseHandoutTest" file="/home/piyush/Documents/programs/Software_Engg-Project-Student_Faculty_Interaction_System/testing using phpunit/test cases/courseHandout_test.php" line="92" assertions="2" time="0.001463"/>
+    <testcase name="test_getSubtopicLink" class="courseHandoutTest" file="/home/piyush/Documents/programs/Software_Engg-Project-Student_Faculty_Interaction_System/testing using phpunit/test cases/courseHandout_test.php" line="112" assertions="2" time="0.001738"/>
+    <testcase name="test_student_getTopicRating" class="courseHandoutTest" file="/home/piyush/Documents/programs/Software_Engg-Project-Student_Faculty_Interaction_System/testing using phpunit/test cases/courseHandout_test.php" line="132" assertions="2" time="0.001250"/>
+    <testcase name="test_student_getSubtopicRating" class="courseHandoutTest" file="/home/piyush/Documents/programs/Software_Engg-Project-Student_Faculty_Interaction_System/testing using phpunit/test cases/courseHandout_test.php" line="152" assertions="2" time="0.030583"/>
+  </testsuite>
+</testsuites>

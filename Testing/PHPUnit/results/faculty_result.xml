@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="facultyTest" file="/home/piyush/Documents/programs/Software_Engg-Project-Student_Faculty_Interaction_System/testing using phpunit/test cases/faculty_test.php" tests="6" assertions="28" failures="0" errors="0" time="0.049734">
+    <testcase name="test_getResearch" class="facultyTest" file="/home/piyush/Documents/programs/Software_Engg-Project-Student_Faculty_Interaction_System/testing using phpunit/test cases/faculty_test.php" line="20" assertions="2" time="0.029995"/>
+    <testcase name="test_courseConducting" class="facultyTest" file="/home/piyush/Documents/programs/Software_Engg-Project-Student_Faculty_Interaction_System/testing using phpunit/test cases/faculty_test.php" line="35" assertions="2" time="0.009600"/>
+    <testcase name="test_faculty_getTopicRating" class="facultyTest" file="/home/piyush/Documents/programs/Software_Engg-Project-Student_Faculty_Interaction_System/testing using phpunit/test cases/faculty_test.php" line="56" assertions="2" time="0.001557"/>
+    <testcase name="test_faculty_getSubtopicRating" class="facultyTest" file="/home/piyush/Documents/programs/Software_Engg-Project-Student_Faculty_Interaction_System/testing using phpunit/test cases/faculty_test.php" line="72" assertions="2" time="0.001367"/>
+    <testcase name="test_topic_getFrequency" class="facultyTest" file="/home/piyush/Documents/programs/Software_Engg-Project-Student_Faculty_Interaction_System/testing using phpunit/test cases/faculty_test.php" line="88" assertions="10" time="0.003796"/>
+    <testcase name="test_subtopic_getFrequency" class="facultyTest" file="/home/piyush/Documents/programs/Software_Engg-Project-Student_Faculty_Interaction_System/testing using phpunit/test cases/faculty_test.php" line="108" assertions="10" time="0.003419"/>
+  </testsuite>
+</testsuites>
