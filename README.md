@@ -1,2 +1,8 @@
-# Piyush-Priyamvad-Rajjat-Chhajer-Somya-Pareek-Y-Sai-Krishna
-Building Application for making Faculty-Student Interaction easier 
+* Building Application for making Faculty-Student Interaction easier
+
+# Team members:
+- Priyamwad Pathak
+- Piyush Jaiswal
+- Rajjat Chhajer
+- Somya Pareek
+- Y.Sai Krishna
