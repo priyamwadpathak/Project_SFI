@@ -1,4 +1,4 @@
-*Building Application for making Faculty-Student Interaction easier
+* Building Application for making Faculty-Student Interaction easier
 
 # Team members:
 - Priyamwad Pathak
