@@ -11,3 +11,5 @@ This application intent to make Faculty-Student Interaction easier
 - Rajjat Chhajer
 - Somya Pareek
 - Y.Sai Krishna
+
+#Contribution - Himanshu Rathi
